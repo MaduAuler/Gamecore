@@ -1,0 +1,49 @@
+.container{
+    width: 20vw;
+    height: 100vh;
+    background-color: #172144;
+}
+
+.logo{
+    width: 90%; 
+}
+
+.buttons{
+   align-items: flex-start;
+   border:none;
+   width: 100%;
+}
+
+.title-friends{
+    text-align: left;
+    color:lightgray;
+}
+
+.img-friends{
+    border-radius: 1000px;
+    height: 35px;
+    width: 35px;
+    border: solid 1px rgb(230,0,126);
+}
+
+.name-friends{
+    font-size: 1rem;
+    color: darkgray;
+   margin:auto;
+ 
+}
+
+.icon-logout{
+    font-size: 2rem;
+    color:darkgray
+}
+
+.float{
+    float:left;
+}
+
+.hr-color{
+    background-color:gray;
+}
+
+    

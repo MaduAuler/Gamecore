@@ -1,0 +1,38 @@
+{
+  "members": [
+    {
+      "id": 1,
+      "name": "json-server",
+      "communities":  ["lol", "valorant"],
+      "picture": "idk",  
+      "about": "hi im blablabla",
+      "area": "berlin"
+    }
+  ],
+  "community": [
+    {
+      "id": 1,
+      "name": "some comment",
+      "cover": "img",
+      "members": ["jessica", "jordan"],
+      "description": "just for pros"
+    }
+  ],
+  "profile":
+     {
+    "name": "typicode",
+    "communities": ["lol", "valorant"],
+    "about": "hi",
+    "area": "berlin",
+    "picture": "upload"
+  }
+,
+"posts" : [
+  {
+    "id": 1,
+    "text": "hello",
+    "img":"upload"
+  }
+]
+
+}
