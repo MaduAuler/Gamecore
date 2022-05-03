@@ -1,0 +1,24 @@
+.profile-picture {
+  border-radius: 1000px;
+  height: 45px;
+  width: 45px;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-container {
+  width: 100%;
+  height: 8%;
+  background-color: #172144;
+}
+
+.input {
+  width: 50%;
+  height: 60%;
+  margin-right: 500px;
+  margin-left: 500px;
+}
+
+.div-space {
+  width: 30%;
+}

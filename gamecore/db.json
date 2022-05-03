@@ -2,28 +2,178 @@
   "members": [
     {
       "id": 1,
-      "name": "json-server",
+      "name": "Jan-Niklas Auler",
       "communities":  ["lol", "valorant"],
       "picture": "idk",  
       "about": "hi im blablabla",
-      "area": "berlin"
+      "area": "Essen"
+    },
+    {
+      "id": 2,
+      "name": "Adriana Owczarzak",
+      "communities":  ["lol", "valorant"],
+      "picture": "idk",  
+      "about": "hi im blablabla",
+      "area": "Essen"
+    },
+    {
+      "id": 3,
+      "name": "Roger Bittencourt",
+      "communities":  ["lol", "valorant"],
+      "picture": "idk",  
+      "about": "hi im blablabla",
+      "area": "Hamburg"
+    },
+    {
+      "id": 4,
+      "name": "Petra Schmidt",
+      "communities":  ["lol", "valorant"],
+      "picture": "idk",  
+      "about": "hi im blablabla",
+      "area": "Essen"
+    },
+    {
+      "id": 5,
+      "name": "Karl Heinz",
+      "communities":  ["lol", "valorant"],
+      "picture": "idk",  
+      "about": "hi im blablabla",
+      "area": "Berlin"
+    },
+    {
+      "id": 6,
+      "name": "Daniel Müller",
+      "communities":  ["lol", "valorant"],
+      "picture": "idk",  
+      "about": "hi im blablabla",
+      "area": "Hamburg"
+    },
+    {
+      "id": 7,
+      "name": "Steffi Hartmann",
+      "communities":  ["lol", "valorant"],
+      "picture": "idk",  
+      "about": "hi im blablabla",
+      "area": "Berlin"
+    },
+    {
+      "id": 8,
+      "name": "Lilly Auler",
+      "communities":  ["lol", "valorant"],
+      "picture": "idk",  
+      "about": "hi im blablabla",
+      "area": "Kalkar"
+    },
+    {
+      "id": 9,
+      "name": "Luigi Mafioletti",
+      "communities":  ["lol", "valorant"],
+      "picture": "idk",  
+      "about": "hi im blablabla",
+      "area": "Köln"
+    },
+    {
+      "id": 10,
+      "name": "Ana Moon",
+      "communities":  ["lol", "valorant"],
+      "picture": "idk",  
+      "about": "hi im blablabla",
+      "area": "Kalkar"
     }
   ],
   "community": [
     {
       "id": 1,
-      "name": "some comment",
+      "name": "League of Legends",
+      "cover": "img",
+      "members": ["jessica", "jordan"],
+      "description": "just for pros"
+    },
+    {
+      "id": 2,
+      "name": "Valorant",
+      "cover": "img",
+      "members": ["jessica", "jordan"],
+      "description": "just for pros"
+    },
+    {
+      "id": 3,
+      "name": "Cities Skylines",
+      "cover": "img",
+      "members": ["jessica", "jordan"],
+      "description": "just for pros"
+    },
+    {
+      "id": 4,
+      "name": "Counter Strike",
+      "cover": "img",
+      "members": ["jessica", "jordan"],
+      "description": "just for pros"
+    },
+    {
+      "id": 5,
+      "name": "Battlefield",
+      "cover": "img",
+      "members": ["jessica", "jordan"],
+      "description": "just for pros"
+    },
+    {
+      "id": 6,
+      "name": "Minecraft",
+      "cover": "img",
+      "members": ["jessica", "jordan"],
+      "description": "just for pros"
+    },
+    {
+      "id": 7,
+      "name": "GTA 5",
+      "cover": "img",
+      "members": ["jessica", "jordan"],
+      "description": "just for pros"
+    },
+    {
+      "id": 8,
+      "name": "Dont Starve Together",
+      "cover": "img",
+      "members": ["jessica", "jordan"],
+      "description": "just for pros"
+    },
+    {
+      "id": 9,
+      "name": "Call of Duty",
+      "cover": "img",
+      "members": ["jessica", "jordan"],
+      "description": "just for pros"
+    },
+    {
+      "id": 10,
+      "name": "Dota 2",
+      "cover": "img",
+      "members": ["jessica", "jordan"],
+      "description": "just for pros"
+    },
+    {
+      "id": 11,
+      "name": "Football Manager",
+      "cover": "img",
+      "members": ["jessica", "jordan"],
+      "description": "just for pros"
+    },
+    {
+      "id": 12,
+      "name": "Rocket League",
       "cover": "img",
       "members": ["jessica", "jordan"],
       "description": "just for pros"
     }
+
   ],
   "profile":
      {
-    "name": "typicode",
-    "communities": ["lol", "valorant"],
+    "name": "Maria Eduarda Auler",
+    "communities": ["League of Legends", "Valorant"],
     "about": "hi",
-    "area": "berlin",
+    "area": "Essen",
     "picture": "upload"
   }
 ,

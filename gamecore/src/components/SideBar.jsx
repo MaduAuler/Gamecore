@@ -9,7 +9,7 @@ const SideBar = () => {
   return (
     <div className="container">
       <Container fluid>
-        <img src={logo} alt="logo" className="logo mt-5 mb-5 " />
+        <img src={logo} alt="logo" className="logo-img mt-5 mb-5 " />
 
         <div className="mb-3 ">
           <Button variant="outline-secondary" size="lg" className="buttons">
