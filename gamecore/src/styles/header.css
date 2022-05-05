@@ -4,6 +4,7 @@
   width: 45px;
   background-size: cover;
   background-position: center;
+  object-fit: cover;
 }
 
 .main-container {

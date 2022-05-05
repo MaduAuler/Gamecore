@@ -1,6 +1,7 @@
 import { Container } from "react-bootstrap";
-import SideBar from "./SideBar";
-import Header from "./Header";
+import SideBar from "../components/SideBar";
+import Header from "../components/Header";
+import Feed from "../components/Feed";
 
 const Home = () => {
   return (
@@ -8,7 +9,7 @@ const Home = () => {
       <SideBar />
       <Container fluid style={{ backgroundColor: "#15172C", padding: "0" }}>
         <Header />
-        <h1 className="mt-5 mb-5">home</h1>
+        <Feed />
       </Container>
     </main>
   );

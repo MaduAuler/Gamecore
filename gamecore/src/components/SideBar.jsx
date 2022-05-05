@@ -7,9 +7,10 @@ import test from "../test.jpg";
 
 const SideBar = () => {
   return (
-    <div className="container">
+    <div className="container-sidebar">
       <Container fluid>
-        <img src={logo} alt="logo" className="logo-img mt-5 mb-5 " />
+       
+        <img src={logo} alt="logo" className="logo-img mt-3 mb-5 " />
 
         <div className="mb-3 ">
           <Button variant="outline-secondary" size="lg" className="buttons">

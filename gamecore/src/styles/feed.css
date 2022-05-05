@@ -1,0 +1,51 @@
+.left-main-div {
+  padding: 0;
+  width: 60%;
+}
+
+.left-main-div-image {
+  width: 100%;
+  border-radius: 1%;
+}
+
+.feed-container {
+  padding: 0;
+  width: 80%;
+  background-color: #15172c;
+  color: white;
+  align-items: left;
+}
+
+.right-main-div-image {
+  height: 130px;
+  width: 250px;
+  object-fit: cover;
+  border-radius: 1%;
+}
+
+.right-main-div {
+  width: 80%;
+}
+
+.right-div-big-button {
+}
+
+.right-div-little-button {
+  width: 150px;
+  height: 35px;
+  border-radius: 10px;
+  background: rgb(124, 22, 204);
+  background: linear-gradient(
+    49deg,
+    rgba(124, 22, 204, 1) 16%,
+    rgba(237, 1, 154, 1) 59%
+  );
+  color: white;
+}
+
+
+
+.right-text{
+    padding:0;
+    margin:0;
+}

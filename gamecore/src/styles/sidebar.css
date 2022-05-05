@@ -1,6 +1,6 @@
-.container {
+.container-sidebar {
   width: 20vw;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #172144;
 }
 
@@ -24,6 +24,7 @@
   height: 35px;
   width: 35px;
   border: solid 1px rgb(230, 0, 126);
+  object-fit: cover;
 }
 
 .name-friends {
