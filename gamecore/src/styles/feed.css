@@ -10,14 +10,14 @@
 
 .feed-container {
   padding: 0;
-  width: 80%;
+  width: 90%;
   background-color: #15172c;
   color: white;
   align-items: left;
 }
 
 .right-main-div-image {
-  height: 130px;
+  height: 150px;
   width: 250px;
   object-fit: cover;
   border-radius: 1%;
@@ -48,4 +48,26 @@
 .right-text{
     padding:0;
     margin:0;
+}
+
+.col-card{
+    width: 25rem;
+    height: 10rem;
+    background-color: #172144;
+    padding: 0;
+    margin: 0;
+    ;
+}
+
+.image-row{
+ width: 90%;
+ height: 90%;
+}
+
+.arrow-div{
+    background: linear-gradient(
+        49deg,
+        rgba(124, 22, 204, 1) 16%,
+        rgba(237, 1, 154, 1) 59%
+      );
 }

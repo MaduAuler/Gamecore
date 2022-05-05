@@ -9,10 +9,10 @@ const Login = () => {
       <img src={logo} alt="logo" className="logo mt-5 mb-5 " />
 
       <div>
-        <input className="input mb-2" placeholder="Username.." />
+        <input className="input-login mb-2" placeholder="Username.." />
       </div>
       <div>
-        <input className="input" placeholder="Password.."></input>
+        <input className="input-login" placeholder="Password.."></input>
       </div>
       <button className="button mt-5">Login</button>
       <p className="mt-1 p-account">

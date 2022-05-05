@@ -14,10 +14,12 @@
 }
 
 .input {
-  width: 50%;
-  height: 60%;
-  margin-right: 500px;
-  margin-left: 500px;
+  width: 40% !important;
+  height: 50%;
+  border-radius: 2%;
+  border-radius: 8px;
+  opacity: 0.2;
+  border: solid 5px white;
 }
 
 .div-space {
