@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Jan-Niklas Auler",
       "communities":  ["lol", "valorant"],
-      "picture": "idk",  
+      "picture": "https://randomuser.me/api/portraits/men/1.jpg",  
       "about": "Addicted in Lol, late night worker",
       "area": "Essen"
     },
@@ -12,7 +12,7 @@
       "id": 2,
       "name": "Adriana Owczarzak",
       "communities":  ["lol", "valorant"],
-      "picture": "idk",  
+      "picture": "https://randomuser.me/api/portraits/women/1.jpg",  
       "about": "I live in a lanhouse",
       "area": "Essen"
     },
@@ -20,7 +20,7 @@
       "id": 3,
       "name": "Roger Bittencourt",
       "communities":  ["lol", "valorant"],
-      "picture": "idk",  
+      "picture": "https://randomuser.me/api/portraits/men/2.jpg",  
       "about": "24 hours online.. roots ",
       "area": "Hamburg"
     },
@@ -28,7 +28,7 @@
       "id": 4,
       "name": "Petra Schmidt",
       "communities":  ["lol", "valorant"],
-      "picture": "idk",  
+      "picture": "https://randomuser.me/api/portraits/women/2.jpg",  
       "about": "Do you like candycrush? lets be friends?",
       "area": "Essen"
     },
@@ -36,7 +36,7 @@
       "id": 5,
       "name": "Karl Heinz",
       "communities":  ["lol", "valorant"],
-      "picture": "idk",  
+      "picture": "https://randomuser.me/api/portraits/men/3.jpg",  
       "about": "Cars games are my favorites",
       "area": "Berlin"
     },
@@ -44,7 +44,7 @@
       "id": 6,
       "name": "Daniel Müller",
       "communities":  ["lol", "valorant"],
-      "picture": "idk",  
+      "picture": "https://randomuser.me/api/portraits/men/4.jpg",  
       "about": "Looking for some friends",
       "area": "Hamburg"
     },
@@ -52,7 +52,7 @@
       "id": 7,
       "name": "Steffi Hartmann",
       "communities":  ["lol", "valorant"],
-      "picture": "idk",  
+      "picture": "https://randomuser.me/api/portraits/women/3.jpg",  
       "about": "  ",
       "area": "Berlin"
     },
@@ -60,7 +60,7 @@
       "id": 8,
       "name": "Lilly Auler",
       "communities":  ["lol", "valorant"],
-      "picture": "idk",  
+      "picture": "https://randomuser.me/api/portraits/women/4.jpg",  
       "about": "hi im blablabla",
       "area": "Kalkar"
     },
@@ -68,7 +68,7 @@
       "id": 9,
       "name": "Luigi Mafioletti",
       "communities":  ["lol", "valorant"],
-      "picture": "idk",  
+      "picture": "https://randomuser.me/api/portraits/men/5.jpg",  
       "about": "hi im blablabla",
       "area": "Köln"
     },
@@ -76,7 +76,7 @@
       "id": 10,
       "name": "Ana Moon",
       "communities":  ["lol", "valorant"],
-      "picture": "idk",  
+      "picture": "https://randomuser.me/api/portraits/women/5.jpg",  
       "about": "hi im blablabla",
       "area": "Kalkar"
     }
@@ -85,84 +85,84 @@
     {
       "id": 1,
       "name": "League of Legends",
-      "cover": "img",
+      "cover": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_LeagueofLegends_RiotGames_S1_2560x1440-ee500721c06da3ec1e5535a88588c77f",
       "members": ["jessica", "jordan"],
       "description": "just for pros"
     },
     {
       "id": 2,
       "name": "Valorant",
-      "cover": "img",
+      "cover": "https://www.tz.de/bilder/2020/04/17/13655280/1851210005-valorant-aktuell-sehr-beliebt-shooter-bereich-2uNPg9Veare9.jpg",
       "members": ["jessica", "jordan"],
       "description": "just for pros"
     },
     {
       "id": 3,
       "name": "Cities Skylines",
-      "cover": "img",
+      "cover": "https://cdn1.epicgames.com/6009be9994c2409099588cde6f3a5ed0/offer/EGS_CitiesSkylinesDeluxeEditionUpgradePack_ColossalOrder_DLC_S1-2560x1440-4f70447d74c2265b7142311d887dd915.jpg",
       "members": ["jessica", "jordan"],
       "description": "just for pros"
     },
     {
       "id": 4,
       "name": "Counter Strike",
-      "cover": "img",
+      "cover": "https://www.gamereactor.de/media/37/_2323773_1200x675.png",
       "members": ["jessica", "jordan"],
       "description": "just for pros"
     },
     {
       "id": 5,
       "name": "Battlefield",
-      "cover": "img",
+      "cover": "https://cdn.mcr.ea.com/3/images/d9fd4861-517d-4941-a1b5-fc7d32ecd3ce/1587532055-0x0-0-0.jpg",
       "members": ["jessica", "jordan"],
       "description": "just for pros"
     },
     {
       "id": 6,
       "name": "Minecraft",
-      "cover": "img",
+      "cover": "https://assets.xboxservices.com/assets/fb/8f/fb8f4675-955f-4930-aab4-3292ec16289e.jpg?n=Minecraft_Feature-Center-1084_XGP-Shotlock_1600x600.jpg",
       "members": ["jessica", "jordan"],
       "description": "just for pros"
     },
     {
       "id": 7,
       "name": "GTA 5",
-      "cover": "img",
+      "cover": "https://i.computer-bild.de/imgs/1/4/2/8/5/1/1/5/aufmacher-6ac55a075635514f.jpg",
       "members": ["jessica", "jordan"],
       "description": "just for pros"
     },
     {
       "id": 8,
       "name": "Dont Starve Together",
-      "cover": "img",
+      "cover": "https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_download_software_1/H2x1_NSwitchDS_DontStarveTogether_image1600w.jpg",
       "members": ["jessica", "jordan"],
       "description": "just for pros"
     },
     {
       "id": 9,
       "name": "Call of Duty",
-      "cover": "img",
+      "cover": "https://images.cgames.de/images/gamestar/4/call-of-duty-black-ops-cold-war-2020_6100922.jpg",
       "members": ["jessica", "jordan"],
       "description": "just for pros"
     },
     {
       "id": 10,
       "name": "Dota 2",
-      "cover": "img",
+      "cover": "https://images.cgames.de/images/gamestar/290/dota-2_2414371.jpg",
       "members": ["jessica", "jordan"],
       "description": "just for pros"
     },
     {
       "id": 11,
       "name": "Football Manager",
-      "cover": "img",
+      "cover": "https://i.computer-bild.de/imgs/1/4/1/5/5/0/1/1/Football_Manager_2022-1e2c6ed478be32cd.jpg?impolicy=full_content",
       "members": ["jessica", "jordan"],
       "description": "just for pros"
     },
     {
       "id": 12,
       "name": "Rocket League",
-      "cover": "img",
+      "cover": "https://rocketleague.media.zestyio.com/rl_platform_keyart_2019.309bf22bd29c2e411e9dd8eb07575bb1.jpg",
       "members": ["jessica", "jordan"],
       "description": "just for pros"
     }

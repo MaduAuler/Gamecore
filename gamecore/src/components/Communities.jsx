@@ -3,8 +3,33 @@ import { Col, Container, Row, Card } from "react-bootstrap";
 import Header from "./Header";
 import "../styles/communities.css";
 import lol from "../lol.jpg";
+import { useState, useEffect } from "react";
 
 const Communities = () => {
+const [communitiesData, setcommunitiesData] = useState([])
+
+useEffect(() => {
+  getCommunities()
+  console.log(communitiesData)
+}, [])
+
+
+const getCommunities = async () => {
+  try {
+    const response = await fetch(
+      'http://localhost:3000/community',
+      
+    )
+    if (response.ok) {
+      const data = await response.json()
+      setcommunitiesData(data)
+      
+    } else {
+      console.log('fetch is not ok')
+    }
+  } catch (error) {}
+}
+
   return (
     <main className="d-flex">
       <SideBar />
