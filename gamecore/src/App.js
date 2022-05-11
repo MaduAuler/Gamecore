@@ -20,7 +20,7 @@ function App() {
         <Route path="/" element= {<Home/>}/>
         <Route path="/communities" element= {<Communities/>}/>
         <Route path="/login" element= {<Login/>}/>
-        <Route path='/community' element= {<Community/>}/>
+        <Route path='/community/:game' element= {<Community/>}/>
         <Route path='/profile' element={<Profile/>}/>
       </Routes>
       </BrowserRouter>

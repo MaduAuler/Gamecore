@@ -2,33 +2,34 @@ import SideBar from "./SideBar";
 import { Col, Container, Row, Card } from "react-bootstrap";
 import Header from "./Header";
 import "../styles/communities.css";
-import lol from "../lol.jpg";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Communities = () => {
-const [communitiesData, setcommunitiesData] = useState([])
-
-useEffect(() => {
-  getCommunities()
-  console.log(communitiesData)
-}, [])
+  const [communitiesData, setcommunitiesData] = useState([]);
 
 
-const getCommunities = async () => {
-  try {
-    const response = await fetch(
-      'http://localhost:3000/community',
-      
-    )
-    if (response.ok) {
-      const data = await response.json()
-      setcommunitiesData(data)
-      
-    } else {
-      console.log('fetch is not ok')
-    }
-  } catch (error) {}
-}
+  useEffect(() => {
+    getCommunities();
+  }, []);
+
+
+
+  const getCommunities = async () => {
+    try {
+      let response = await fetch("http://localhost:3001/community");
+      if (response.ok) {
+        let data = await response.json();
+        setcommunitiesData(data);
+        communitiesData.push(data)
+        //setcommunitiesData(data) its not working setcommunitiesData(...data)
+        console.log("communitiesdata", communitiesData, "data", data);
+      } else {
+        console.log("fetch is not ok");
+      }
+    } catch (error) {}
+  };
+
 
   return (
     <main className="d-flex">
@@ -37,148 +38,27 @@ const getCommunities = async () => {
         <Header />
         <Container fluid className="cards-container">
           <Row className="mt-5">
-            <Col>
-              <Card className="cards mt-5">
-                <Card.Body className="card-image-position">
-                  <img className="image-card" alt="community" src={lol} />
-                  <Card.Title style={{ padding: "0" }} className="mt-3">
-                    League of Legends
-                  </Card.Title>
-                  <Card.Subtitle className="mb-3 text-muted">
-                    1.512 members
-                  </Card.Subtitle>
-
-                  <button className="join-button">Join Community</button>
-                </Card.Body>
-              </Card>
-            </Col>
-
-            <Col>
-              <Card className="cards mt-5">
-                <Card.Body className="card-image-position">
-                  <img className="image-card" alt="community" src={lol} />
-                  <Card.Title style={{ padding: "0" }} className="mt-3">
-                    League of Legends
-                  </Card.Title>
-                  <Card.Subtitle className="mb-3 text-muted">
-                    1.512 members
-                  </Card.Subtitle>
-
-                  <button className="join-button">Join Community</button>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col>
-              <Card className="cards mt-5">
-                <Card.Body className="card-image-position">
-                  <img className="image-card" alt="community" src={lol} />
-                  <Card.Title style={{ padding: "0" }} className="mt-3">
-                    League of Legends
-                  </Card.Title>
-                  <Card.Subtitle className="mb-3 text-muted">
-                    1.512 members
-                  </Card.Subtitle>
-
-                  <button className="join-button">Join Community</button>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
-          <Row className="mt-5">
-            <Col>
-              <Card className="cards mt-5">
-                <Card.Body className="card-image-position">
-                  <img className="image-card" alt="community" src={lol} />
-                  <Card.Title style={{ padding: "0" }} className="mt-3">
-                    League of Legends
-                  </Card.Title>
-                  <Card.Subtitle className="mb-3 text-muted">
-                    1.512 members
-                  </Card.Subtitle>
-
-                  <button className="join-button">Join Community</button>
-                </Card.Body>
-              </Card>
-            </Col>
-
-            <Col>
-              <Card className="cards mt-5">
-                <Card.Body className="card-image-position">
-                  <img className="image-card" alt="community" src={lol} />
-                  <Card.Title style={{ padding: "0" }} className="mt-3">
-                    League of Legends
-                  </Card.Title>
-                  <Card.Subtitle className="mb-3 text-muted">
-                    1.512 members
-                  </Card.Subtitle>
-
-                  <button className="join-button">Join Community</button>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col>
-              <Card className="cards mt-5">
-                <Card.Body className="card-image-position">
-                  <img className="image-card" alt="community" src={lol} />
-                  <Card.Title style={{ padding: "0" }} className="mt-3">
-                    League of Legends
-                  </Card.Title>
-                  <Card.Subtitle className="mb-3 text-muted">
-                    1.512 members
-                  </Card.Subtitle>
-
-                  <button className="join-button">Join Community</button>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
-          <Row className="mt-5">
-            <Col>
-              <Card className="cards mt-5">
-                <Card.Body className="card-image-position">
-                  <img className="image-card" alt="community" src={lol} />
-                  <Card.Title style={{ padding: "0" }} className="mt-3">
-                    League of Legends
-                  </Card.Title>
-                  <Card.Subtitle className="mb-3 text-muted">
-                    1.512 members
-                  </Card.Subtitle>
-
-                  <button className="join-button">Join Community</button>
-                </Card.Body>
-              </Card>
-            </Col>
-
-            <Col>
-              <Card className="cards mt-5">
-                <Card.Body className="card-image-position">
-                  <img className="image-card" alt="community" src={lol} />
-                  <Card.Title style={{ padding: "0" }} className="mt-3">
-                    League of Legends
-                  </Card.Title>
-                  <Card.Subtitle className="mb-3 text-muted">
-                    1.512 members
-                  </Card.Subtitle>
-
-                  <button className="join-button">Join Community</button>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col>
-              <Card className="cards mt-5">
-                <Card.Body className="card-image-position">
-                  <img className="image-card" alt="community" src={lol} />
-                  <Card.Title style={{ padding: "0" }} className="mt-3">
-                    League of Legends
-                  </Card.Title>
-                  <Card.Subtitle className="mb-3 text-muted">
-                    1.512 members
-                  </Card.Subtitle>
-
-                  <button className="join-button">Join Community</button>
-                </Card.Body>
-              </Card>
-            </Col>
+           
+            {communitiesData && communitiesData.map((data) => {
+              return(
+                <Col>
+                <Card className="cards mt-5">
+                  <Card.Body className="card-image-position">
+                    <img className="image-card" alt="community" src={data.cover} />
+                    <Card.Title style={{ padding: "0" }} className="mt-3">
+                      {data.name}
+                    </Card.Title>
+                    <Card.Subtitle className="mb-3 text-muted">
+                      1.512 members
+                    </Card.Subtitle>
+  
+                    <Link to={"/community"}> <button className="join-button">Join Community</button> </Link>
+                  </Card.Body>
+                </Card>
+              </Col>
+              )
+            })}
+          
           </Row>
         </Container>
       </Container>
