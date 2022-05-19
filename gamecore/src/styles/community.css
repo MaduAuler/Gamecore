@@ -3,3 +3,35 @@
     background-position: top;
     background-size:cover;
 }
+
+.members-container{
+    width: 100%;
+    height: 65vh;
+    opacity: 0.2;
+    background-position: top;
+}
+
+
+.title-friends {
+    text-align: left;
+    color: lightgray;
+  }
+  
+  .img-friends {
+    border-radius: 1000px;
+    height: 35px;
+    width: 35px;
+    border: solid 1px rgb(230, 0, 126);
+    object-fit: cover;
+  }
+  
+  .name-friends {
+    font-size: 1rem;
+    color: darkgray;
+    margin: auto;
+  }
+
+  h1, h2{
+      color:white;
+      opacity: 1;
+  }

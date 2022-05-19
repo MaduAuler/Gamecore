@@ -2,33 +2,19 @@ import SideBar from "./SideBar";
 import { Col, Container, Row, Card } from "react-bootstrap";
 import Header from "./Header";
 import "../styles/communities.css";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { getCommunitiesAction } from '../redux/actions';
+import { useSelector, useDispatch } from 'react-redux'
 
 const Communities = () => {
-  const [communitiesData, setcommunitiesData] = useState([]);
+  const communities = useSelector((state) => state.communities.stock)
+  const dispatch = useDispatch()
+ 
 
-
-  useEffect(() => {
-    getCommunities();
-  }, []);
-
-
-
-  const getCommunities = async () => {
-    try {
-      let response = await fetch("http://localhost:3001/community");
-      if (response.ok) {
-        let data = await response.json();
-        setcommunitiesData(data);
-        communitiesData.push(data)
-        //setcommunitiesData(data) its not working setcommunitiesData(...data)
-        console.log("communitiesdata", communitiesData, "data", data);
-      } else {
-        console.log("fetch is not ok");
-      }
-    } catch (error) {}
-  };
+  useEffect(()=> {
+    dispatch(getCommunitiesAction())
+}, [])
 
 
   return (
@@ -39,7 +25,7 @@ const Communities = () => {
         <Container fluid className="cards-container">
           <Row className="mt-5">
            
-            {communitiesData && communitiesData.map((data) => {
+            {communities && communities.map((data) => {
               return(
                 <Col>
                 <Card className="cards mt-5">
@@ -52,7 +38,7 @@ const Communities = () => {
                       1.512 members
                     </Card.Subtitle>
   
-                    <Link to={"/community"}> <button className="join-button">Join Community</button> </Link>
+                    <Link to={"/community/" + data.name}> <button className="join-button">Join Community</button> </Link>
                   </Card.Body>
                 </Card>
               </Col>

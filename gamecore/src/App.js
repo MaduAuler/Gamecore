@@ -6,15 +6,15 @@ import Communities from './components/Communities';
 import Login from './components/Login';
 import Community from './components/Community';
 import Profile from './components/Profile'
-//import {Provider} from 'react-redux'
-//import store from './redux/store'
+import {Provider} from 'react-redux'
+import store from './redux/store'
 
 
 function App() {
   return (
    
     <div className="App">
-     {/*  <Provider store={store}>*/}
+       <Provider store={store}>
       <BrowserRouter>
       <Routes>
         <Route path="/" element= {<Home/>}/>
@@ -24,7 +24,7 @@ function App() {
         <Route path='/profile' element={<Profile/>}/>
       </Routes>
       </BrowserRouter>
-      {/* </Provider>*/}
+       </Provider>
     </div>
   );
 }
