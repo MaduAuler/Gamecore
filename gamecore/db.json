@@ -10,7 +10,7 @@
     },
     {
       "id": 2,
-      "name": "Adriana Owczarzak",
+      "name": "Adriana Owc",
       "communities":  ["lol", "valorant"],
       "picture": "https://randomuser.me/api/portraits/women/1.jpg",  
       "about": "I live in a lanhouse",
@@ -18,7 +18,7 @@
     },
     {
       "id": 3,
-      "name": "Roger Bittencourt",
+      "name": "Roger Bit",
       "communities":  ["lol", "valorant"],
       "picture": "https://randomuser.me/api/portraits/men/2.jpg",  
       "about": "24 hours online.. roots ",
@@ -168,7 +168,7 @@
     }
 
   ],
-  "profile":
+  "MyProfile":
      {
     "name": "Maria Eduarda Auler",
     "communities": ["League of Legends", "Valorant"],

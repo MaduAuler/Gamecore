@@ -25,3 +25,15 @@
 .div-space {
   width: 30%;
 }
+
+
+
+.buttonHeader {
+  
+  border: none;
+  height: 80%;
+background-color: #172144;
+}.buttonHeader:hover{
+  background-color:rgb(230, 0, 126);
+  border-radius: 5px;
+}

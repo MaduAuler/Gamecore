@@ -6,8 +6,18 @@ import { Button, Container } from "react-bootstrap";
 import test from "../test.jpg";
 import { SiGooglemessages } from "react-icons/si";
 import { Link } from "react-router-dom";
+import { getMembersAction } from "../redux/actions";
+import { useSelector, useDispatch } from "react-redux";
+import { useEffect } from "react";
 
 const SideBar = () => {
+  const members = useSelector((state) => state.members.stock);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getMembersAction());
+  }, []);
+
   return (
     <div className="container-sidebar">
       <Container fluid>
@@ -45,51 +55,26 @@ const SideBar = () => {
 
         {/* After will be substitute for a map with the API friends */}
 
-        <div className="mt-3 align-items-center d-flex ">
-          <div>
-            <img src={test} alt="friends" className="img-friends mr-3" />
-          </div>
-          <div>
-            <p className="name-friends">Madu Auler</p>
-          </div>
-        </div>
-        <div className="mt-3 align-items-center  d-flex ">
-          <div>
-            <img src={test} alt="friends" className="img-friends mr-3" />
-          </div>
-          <div className="d-flex align-items-center justify-content-center">
-            <p className="name-friends mr-3">Madu Auler</p>{" "}
-            <SiGooglemessages style={{ color: "white" }} />
-          </div>
-        </div>
-        <div className="mt-3 align-items-center  d-flex ">
-          <div>
-            <img src={test} alt="friends" className="img-friends mr-3" />
-          </div>
-          <div>
-            <p className="name-friends">Madu Auler</p>
-          </div>
-        </div>
-        <div className="mt-3 align-items-center  d-flex ">
-          <div>
-            <img src={test} alt="friends" className="img-friends mr-3" />
-          </div>
-          <div>
-            <p className="name-friends">Madu Auler</p>
-          </div>
-        </div>
-        <div className="mt-3 align-items-center  d-flex ">
-          <div>
-            <img src={test} alt="friends" className="img-friends mr-3" />
-          </div>
-          <div>
-            <p className="name-friends">Madu Auler</p>
-          </div>
-        </div>
+        {members.map((member) => {
+          return (
+            <div className="mt-3 align-items-center  d-flex w-100 ">
+              <div>
+                <img
+                  src={member.picture}
+                  alt="friends"
+                  className="img-friends mr-3"
+                />
+              </div>
+              <div className="d-flex align-items-center justify-content-between">
+                <Button variant="outline-secondary" size="sm" className="name-friends mr-3 buttons">{member.name}</Button>{" "}
+              </div>
+            </div>
+          );
+        })}
 
         <hr className="mt-5 mb-5 hr-color" />
 
-        <div className="mb-3  ">
+        <div className="mb-5  ">
           <Button variant="outline-secondary" size="lg" className="buttons">
             <div className="float">
               <CgLogOut /> <span>Log out</span>
