@@ -6,9 +6,12 @@ body{
   width: 21rem;
   background-color: #23294d;
   color: white;
-  border: solid 1px rgb(82, 81, 81);
   border-radius: 15px !important ;
 
+}
+.cards:hover{
+  border: solid 2px rgba(237, 1, 154, 1);
+  box-sizing: border-box;
 }
 
 .cards-container {
@@ -36,6 +39,11 @@ body{
     rgba(237, 1, 154, 1) 59%
   );
   color: white;
+  border: none;
+}
+.join-button:hover{
+  width: 220px;
+  height: 35px;
 }
 
 .card-image-position{

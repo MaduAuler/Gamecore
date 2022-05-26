@@ -102,7 +102,7 @@ const Feed = () => {
                 <div className="d-flex align-items-center justify-content-center">
                   <img alt="streamers" src={image}  className="image-row"/>
                 </div>
-                <div  className="d-flex align-items-center justify-content-center"> Peter Park Twitch 
+                <div  className="d-flex align-items-center justify-content-center"> Peter Smits Twitch 
                 Online</div>
               
               <div style={{height:"100%", width:"10%", backgroundColor:'#232C4D', fontSize:"2rem"}} className="d-flex align-items-center justify-content-center"><RiArrowRightSLine/></div>
@@ -124,7 +124,7 @@ const Feed = () => {
           <Col>
             <div className="col-card d-flex justify-content-between ">
             
-                <div className="d-flex align-items-center justify-content-center">
+                <div className="d-flex align-items-center justify-content-center ">
                   <img alt="streamers" src={image3}  className="image-row"/>
                 </div>
                 <div  className="d-flex align-items-center justify-content-center"> oi hei oi ahsdhahsduhasd</div>

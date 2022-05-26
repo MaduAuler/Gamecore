@@ -3,8 +3,6 @@ import logo from "../logo.png";
 import { AiFillHome } from "react-icons/ai";
 import { CgCommunity, CgLogOut } from "react-icons/cg";
 import { Button, Container } from "react-bootstrap";
-import test from "../test.jpg";
-import { SiGooglemessages } from "react-icons/si";
 import { Link } from "react-router-dom";
 import { getMembersAction } from "../redux/actions";
 import { useSelector, useDispatch } from "react-redux";

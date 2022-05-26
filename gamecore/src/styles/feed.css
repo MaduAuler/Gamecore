@@ -27,9 +27,6 @@
   width: 80%;
 }
 
-.right-div-big-button {
-}
-
 .right-div-little-button {
   width: 150px;
   height: 35px;
@@ -62,6 +59,7 @@
 .image-row{
  width: 90%;
  height: 90%;
+ object-fit: cover;
 }
 
 .arrow-div{
