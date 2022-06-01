@@ -35,3 +35,15 @@
       color:white;
       opacity: 1;
   }
+
+  .feedPost{
+    width: 70%;
+    min-height: 500px;
+    background-color: #172144;
+    border-radius: 2%;
+
+  }
+  
+  .hrcolor{
+    background-color: rgb(230, 0, 126);
+  }

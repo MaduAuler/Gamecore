@@ -26,25 +26,18 @@ const Community = () => {
           className="banner"
           style={{ backgroundImage: `url(${community[0].cover})` }}
         ></div>
-        <div className="d-flex justify-content-between">
-          <div>
-            <h1 className="mt-5 mb-5 ml-5">{community[0].name}</h1>
-          </div>
-          <div style={{ width: "25%" }}>
-            <div
-              className="members-container"
-              style={{ backgroundImage: `url(${community[0].cover})` }}
-            >
-              <Container fluid>
-                <h1>MEMBERS</h1>
-                {community[0].members.map((member) => {
-                  return(<h2>{member}</h2>)
-                  
-                })}
-              </Container>
+         <h1 className="mt-5 mb-5 ml-5">{community[0].name}</h1>
+      
+       
+          <div className="d-flex justify-content-center align-items-center">
+            
+            <div className="feedPost ml-5">
+             
+              <hr className="hrcolor"/>
             </div>
           </div>
-        </div>
+         
+    
       </Container>
     </main>
   );
