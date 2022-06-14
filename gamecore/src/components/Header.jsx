@@ -8,20 +8,7 @@ const Header = () => {
         <div></div>
       <input className="input ml-5" placeholder="Search.." />
 <Link to="/profile">
-     <button className="buttonHeader mr-5" > <div className="d-flex align-items-center justify-content-center">
-        <div className="d-flex">
-          <p style={{ color: "white" }} className="mr-2">Name </p>{" "}
-          <p style={{ color: "white" }}>Lastname</p>
-        </div>
-        <div>
-          <img
-            src={test}
-            alt="profile-pic"
-            className="profile-picture ml-2 "
-          />
-        </div>
-      </div>
-      </button>
+  
       </Link>
     </div>
     

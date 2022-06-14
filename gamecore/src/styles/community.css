@@ -1,49 +1,93 @@
-.banner{
-    height: 35vh;
-    background-position: top;
-    background-size:cover;
+.banner {
+  height: 35vh;
+  background-position: top;
+  background-size: cover;
+  margin-left: 10%;
+  border-radius: 15px 0 0 15px;
+  border: 2px solid #3a4671;
 }
 
-.members-container{
-    width: 100%;
-    height: 65vh;
-    opacity: 0.2;
-    background-position: top;
+.members-container {
+  width: 100%;
+  height: 65vh;
+  opacity: 0.2;
+  background-position: top;
 }
-
 
 .title-friends {
-    text-align: left;
-    color: lightgray;
-  }
-  
-  .img-friends {
-    border-radius: 1000px;
-    height: 35px;
-    width: 35px;
-    border: solid 1px rgb(230, 0, 126);
-    object-fit: cover;
-  }
-  
-  .name-friends {
-    font-size: 1rem;
-    color: darkgray;
-    margin: auto;
-  }
+  text-align: left;
+  color: #ced5f1;
+}
 
-  h1, h2{
-      color:white;
-      opacity: 1;
-  }
+.img-friends {
+  border-radius: 1000px;
+  height: 35px;
+  width: 35px;
+  border: solid 1px rgb(230, 0, 126);
+  object-fit: cover;
+}
 
-  .feedPost{
-    width: 70%;
-    min-height: 500px;
-    background-color: #172144;
-    border-radius: 2%;
+.name-friends {
+  font-size: 1rem;
+  color: darkgray;
+  margin: auto;
+}
 
-  }
-  
-  .hrcolor{
-    background-color: rgb(230, 0, 126);
-  }
+.community-name {
+  color: #ced5f1;
+  text-align: left;
+  margin-left: 10%;
+}
+
+.feedPost {
+  width: 85%;
+  min-height: 500px;
+  background-color: #172144;
+  border-radius: 15px;
+  border: 1px solid #33406f;
+}
+
+.hrcolor {
+  background-color: rgb(230, 0, 126);
+}
+
+.lasthours {
+  background-color: #172144;
+  border-radius: 15px;
+  width: 17%;
+  color: #586696;
+  height: max-content;
+}
+
+.badge {
+  padding: 1px 9px 2px;
+  font-size: 12.025px;
+  font-weight: bold;
+  white-space: nowrap;
+  color: #ffffff;
+  background-color: #f800e7;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+}
+
+.yourpost {
+  width: 85%;
+  background-color: #172144;
+  height: 12%;
+  border-radius: 15px;
+  padding: 20px;
+  border: 1px solid #33406f;
+}
+
+.div-post {
+  margin-left: 10%;
+  width: 70%;
+}
+
+.img-post {
+  border-radius: 1000px;
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+}

@@ -1,0 +1,52 @@
+.img-profile {
+  height: 160px;
+  width: 160px;
+  border-radius: 1000px;
+  position: absolute;
+  object-fit: cover;
+  top: -30%;
+  left: 13%;
+  border: solid 2px rgba(237, 1, 154, 1);
+}
+
+.aboutme {
+  background-color: #172144;
+  color: #c9d0e6;
+  border-radius: 15px;
+  border: 2px solid #3a4671;
+  padding: 20px;
+}
+
+.profile-div {
+  width: 90%;
+  margin-left: 10%;
+  color: #c9d0e6;
+ 
+}
+
+.groups{
+    width: 30%;
+    background-color: #172144;
+    border-radius: 15px;
+   padding: 20px;
+
+}
+
+.icons-profile{
+    font-size: 2rem;
+}
+
+.arrow-profile{
+    color:rgba(237, 1, 154, 1);
+    font-size: 1.7rem;
+}
+
+.img-group{
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+}
+
+.edit{
+    color:#c9d0e6;
+}

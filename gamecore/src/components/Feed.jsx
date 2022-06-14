@@ -102,8 +102,7 @@ const Feed = () => {
                 <div className="d-flex align-items-center justify-content-center">
                   <img alt="streamers" src={image}  className="image-row"/>
                 </div>
-                <div  className="d-flex align-items-center justify-content-center"> Peter Smits Twitch 
-                Online</div>
+                <div  className="d-flex align-items-center justify-content-center">  Online</div>
               
               <div style={{height:"100%", width:"10%", backgroundColor:'#232C4D', fontSize:"2rem"}} className="d-flex align-items-center justify-content-center"><RiArrowRightSLine/></div>
             </div>
@@ -115,7 +114,7 @@ const Feed = () => {
                 <div className="d-flex align-items-center justify-content-center">
                   <img alt="streamers" src={image2}  className="image-row"/>
                 </div>
-                <div  className="d-flex align-items-center justify-content-center"> oi hei oi ahsdhahsduhasd</div>
+                <div  className="d-flex align-items-center justify-content-center">  Online</div>
               
               <div style={{height:"100%", width:"10%", backgroundColor:'#232C4D', fontSize:"2rem"}} className="d-flex align-items-center justify-content-center arrow-div"><RiArrowRightSLine/></div>
             </div>
@@ -127,7 +126,7 @@ const Feed = () => {
                 <div className="d-flex align-items-center justify-content-center ">
                   <img alt="streamers" src={image3}  className="image-row"/>
                 </div>
-                <div  className="d-flex align-items-center justify-content-center"> oi hei oi ahsdhahsduhasd</div>
+                <div  className="d-flex align-items-center justify-content-center">  Online</div>
               
               <div style={{height:"100%", width:"10%", backgroundColor:'#232C4D', fontSize:"2rem"}} className="d-flex align-items-center justify-content-center"><RiArrowRightSLine/></div>
             </div>

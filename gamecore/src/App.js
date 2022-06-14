@@ -21,7 +21,7 @@ function App() {
         <Route path="/communities" element= {<Communities/>}/>
         <Route path="/login" element= {<Login/>}/>
         <Route path='/community/:game' element= {<Community/>}/>
-        <Route path='/profile' element={<Profile/>}/>
+        <Route path='/profile/:name' element={<Profile/>}/>
       </Routes>
       </BrowserRouter>
        </Provider>

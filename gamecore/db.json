@@ -168,13 +168,14 @@
     }
 
   ],
-  "MyProfile":
+  "myProfile":
      {
     "name": "Maria Eduarda Auler",
     "communities": ["League of Legends", "Valorant"],
+    "picture": "https://randomuser.me/api/portraits/men/4.jpg", 
     "about": "hi",
-    "area": "Essen",
-    "picture": "upload"
+    "area": "Essen"
+  
   }
 ,
 "posts" : [
