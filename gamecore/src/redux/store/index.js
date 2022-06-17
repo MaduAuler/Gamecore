@@ -5,6 +5,7 @@ import membersReducer from "../reducers/members"
 
 import thunk from 'redux-thunk'
 import myProfileReducer from '../reducers/myprofile'
+import postsReducer from '../reducers/posts'
 
 const composeFunctionThatAlwaysWorks =
   window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
@@ -23,12 +24,17 @@ export const initialState = {
     stock: []
   },
 
+  posts:{
+    stock:[]
+  },
+
 }
 
 const bigReducer = combineReducers({
   communities: communitiesReducer,
  members: membersReducer,
- myProfile: myProfileReducer
+ myProfile: myProfileReducer,
+ posts: postsReducer
 })
 
 const configureStore = createStore(

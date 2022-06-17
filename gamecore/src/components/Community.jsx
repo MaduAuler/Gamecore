@@ -2,17 +2,19 @@ import { Container } from "react-bootstrap";
 import SideBar from "./SideBar";
 import "../styles/community.css";
 import { useParams } from "react-router-dom";
-import { getCommunitiesAction } from "../redux/actions";
+import { getCommunitiesAction, getPosts } from "../redux/actions";
 import { useSelector, useDispatch } from "react-redux";
 import { useEffect } from "react";
 import streamer from "../streamer2.jpg";
 const Community = () => {
   const { game } = useParams();
   const communities = useSelector((state) => state.communities.stock);
+  const posts = useSelector((state) => state.posts.stock);
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(getCommunitiesAction());
+    dispatch(getPosts());
   }, []);
 
   const community = communities.filter((c) => c.name === game);
@@ -37,9 +39,23 @@ const Community = () => {
                 className="img-post ml-3 mr-5 "
               />
 
-              <div style={{ color: "#586696" }}>What is new on gaming?</div>
+              <div className="color-text">What is new on gaming?</div>
             </div>
-            <div className="feedPost"></div>
+            {posts.map((post) => (
+              <div className="feedPost mb-3">
+                <div className="d-flex p-3">
+                  <img alt="profile" src={post.user.picture} className="img-post mr-2 ml-4 "/>
+                  <div>
+                    <p style={{margin: "0", color: "#586696"}}>{post.user.name}</p>
+                    <p className="text-left color-text">5h</p>
+                  </div>
+                </div>
+
+                <img alt="post" src={post.img} className="post-img"/>
+                <h4 className="text-white pl-5 pr-5 pt-5">{post.title}</h4>
+                <p className="color-text p-5 text-left">{post.text}</p>
+              </div>
+            ))}
           </div>
 
           <div className="lasthours mr-5">

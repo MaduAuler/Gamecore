@@ -13,23 +13,31 @@ import {
   FaRegEdit,
 } from "react-icons/fa";
 import { useParams } from "react-router-dom";
-import { getMembersAction,getMyProfileAction } from "../redux/actions";
+import { getMembersAction,getMyProfileAction, getCommunitiesAction } from "../redux/actions";
 import { useSelector, useDispatch } from "react-redux";
 import { useEffect } from "react";
 
 const Profile = () => {
   const { name } = useParams();
   const members = useSelector((state) => state.members.stock);
-  const myProfile = useSelector((state) => state.myProfile.stock);
+  const allCommunities = useSelector((state) => state.communities.stock);
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(getMembersAction());
     dispatch(getMyProfileAction())
+    dispatch(getCommunitiesAction())
  
   }, []);
 
   const profile =  members.filter((c) => c.name === name); 
+  let userCommunities = [] // initializing the array
+profile[0].communities.forEach((community) => { // cycling the community names in the user
+    const foundCommunity = allCommunities.find((c) => c.name === community) // finding a match between the community name and the property 'name' of every community
+    if (foundCommunity) { // if a match is found
+      userCommunities.push(foundCommunity) // push the object of the found community in userCommunities
+    }
+  })
 
   return (
     <main className="d-flex">
@@ -37,10 +45,10 @@ const Profile = () => {
       <Container fluid style={{ backgroundColor: "#15172C", padding: "0" }}>
         <div
           className="banner"
-          style={{ backgroundImage: `url(${lol})` }}
+          style={{ backgroundImage: `url(${profile[0].background})` }}
         ></div>
         <div className="card-image-position">
-         {profile ? <img src={profile[0].picture } alt="friends" className="img-profile " /> : <img src={myProfile.picture } alt="friends" className="img-profile " /> } 
+          <img src={profile[0].picture } alt="friends" className="img-profile " /> 
         </div>
         <div className="edit d-flex justify-content-end mr-5">
           <FaRegEdit style={{fontSize:"1.5rem"}}/>
@@ -50,7 +58,7 @@ const Profile = () => {
           <div className=" d-flex justify-content-between">
             <div style={{ width: "80%" }} className="mr-5">
               <div className=" d-flex justify-content-between">
-                <h1 className="text-left mb-5">{profile ? profile[0].name : myProfile.name}</h1>
+                <h1 className="text-left mb-5">{profile[0].name}</h1>
                 <div className="icons-profile">
                   <FaTwitter /> <FaFacebookSquare /> <FaInstagram />
                 </div>
@@ -58,14 +66,7 @@ const Profile = () => {
               <div className="aboutme text-left">
                 <h4>About me</h4>
                 <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Ullam molestiae doloremque repudiandae dolor natus expedita
-                  quas sunt cumque. Temporibus corporis autem repellat quam
-                  debitis voluptate molestias illo et labore sit! Lorem ipsum
-                  dolor sit, amet consectetur adipisicing elit. Ullam molestiae
-                  doloremque repudiandae dolor natus expedita quas sunt cumque.
-                  Temporibus corporis autem repellat quam debitis voluptate
-                  molestias illo et labore sit!
+               {profile[0].about}
                 </p>
               </div>
               <div className="interests text-left mt-5">
@@ -80,42 +81,17 @@ const Profile = () => {
                   <FaArrowAltCircleRight />
                 </div>
               </div>
-              <div className=" d-flex  align-items-center mb-3">
+              {   userCommunities.map((community)=>(
+                <div className=" d-flex  align-items-center mb-3">
                 <div className="group-img">
-                  <img src={valorant} alt="friends" className="img-group" />
+                  <img src={community.cover} alt="friends" className="img-group" />
                 </div>
                 <div className="group-name text-left ml-3">
-                  <p style={{ margin: "0" }}>Valorant</p>
+                  <p style={{ margin: "0" }}>{community.name}</p>
                   <p>11.555 members</p>
                 </div>
               </div>
-              <div className=" d-flex  align-items-center mb-3">
-                <div className="group-img">
-                  <img src={valorant} alt="friends" className="img-group" />
-                </div>
-                <div className="group-name text-left ml-3">
-                  <p style={{ margin: "0" }}>Valorant</p>
-                  <p>11.555 members</p>
-                </div>
-              </div>
-              <div className=" d-flex  align-items-center mb-3">
-                <div className="group-img">
-                  <img src={valorant} alt="friends" className="img-group" />
-                </div>
-                <div className="group-name text-left ml-3">
-                  <p style={{ margin: "0" }}>Valorant</p>
-                  <p>11.555 members</p>
-                </div>
-              </div>
-              <div className=" d-flex  align-items-center">
-                <div className="group-img">
-                  <img src={valorant} alt="friends" className="img-group" />
-                </div>
-                <div className="group-name text-left ml-3">
-                  <p style={{ margin: "0" }}>Valorant</p>
-                  <p>11.555 members</p>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>

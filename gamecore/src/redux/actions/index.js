@@ -2,6 +2,7 @@
 export const GET_COMMUNITIES = 'GET_COMMUNITIES'
 export const GET_MEMBERS = 'GET_MEMBERS'
 export const GET_MYPROFILE = 'GET_MYPROFILE'
+export const GET_POSTS = 'GET_POSTS'
 
 
 export const getCommunitiesAction = () => {
@@ -61,6 +62,29 @@ export const getMyProfileAction = () => {
         dispatch({
           type: GET_MYPROFILE,
           payload: myProfile,
+        })
+
+      } else {
+        console.log('error')
+      }
+    } catch (error) {
+      console.log(error) 
+    }
+  }
+}
+
+export const getPosts = () => {
+  return async (dispatch, getState) => {
+    try {
+      let resp = await fetch(
+        "http://localhost:3001/posts"
+      )
+      if (resp.ok) {
+        let posts = await resp.json()
+
+        dispatch({
+          type: GET_POSTS,
+          payload: posts,
         })
 
       } else {

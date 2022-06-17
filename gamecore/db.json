@@ -3,39 +3,42 @@
     {
       "id": 1,
       "name": "Jan-Niklas Auler",
-      "communities":  ["lol", "valorant"],
+      "communities":  ["Cities Skylines", "League of Legends", "Counter Strike", "Football Manager"],
       "picture": "https://randomuser.me/api/portraits/men/1.jpg",  
       "about": "Addicted in Lol, late night worker",
-      "area": "Essen"
+      "area": "Essen",
+      "background": "https://www.tz.de/bilder/2020/04/17/13655280/1851210005-valorant-aktuell-sehr-beliebt-shooter-bereich-2uNPg9Veare9.jpg"
     },
     {
       "id": 2,
       "name": "Adriana Owc",
-      "communities":  ["lol", "valorant"],
+      "communities":  ["Dota 2", "Call of Duty", "Dont Starve Together", "Valorant"],
       "picture": "https://randomuser.me/api/portraits/women/1.jpg",  
       "about": "I live in a lanhouse",
-      "area": "Essen"
+      "area": "Essen",
+      "background": "https://i.computer-bild.de/imgs/1/4/2/8/5/1/1/5/aufmacher-6ac55a075635514f.jpg"
     },
     {
       "id": 3,
       "name": "Roger Bit",
-      "communities":  ["lol", "valorant"],
+      "communities":  ["League of Legends", "Battlefield", "Minecraft", "Football Manager"],
       "picture": "https://randomuser.me/api/portraits/men/2.jpg",  
       "about": "24 hours online.. roots ",
-      "area": "Hamburg"
+      "area": "Hamburg",
+      "background": "https://images.cgames.de/images/gamestar/290/dota-2_2414371.jpg"
     },
     {
       "id": 4,
       "name": "Petra Schmidt",
-      "communities":  ["lol", "valorant"],
+      "communities":  ["Minecraft", "Valorant", "Rocket League"],
       "picture": "https://randomuser.me/api/portraits/women/2.jpg",  
-      "about": "Do you like candycrush? lets be friends?",
+      "about": "Do you like candycrush? lets be friends? ",
       "area": "Essen"
     },
     {
       "id": 5,
       "name": "Karl Heinz",
-      "communities":  ["lol", "valorant"],
+      "communities":  ["League of Legends", "Valorant"],
       "picture": "https://randomuser.me/api/portraits/men/3.jpg",  
       "about": "Cars games are my favorites",
       "area": "Berlin"
@@ -43,7 +46,7 @@
     {
       "id": 6,
       "name": "Daniel Müller",
-      "communities":  ["lol", "valorant"],
+      "communities":  ["Minecraft", "Battlefield", "Rocket League"],
       "picture": "https://randomuser.me/api/portraits/men/4.jpg",  
       "about": "Looking for some friends",
       "area": "Hamburg"
@@ -51,7 +54,7 @@
     {
       "id": 7,
       "name": "Steffi Hartmann",
-      "communities":  ["lol", "valorant"],
+      "communities":  ["GTA 5", "Call of Duty"],
       "picture": "https://randomuser.me/api/portraits/women/3.jpg",  
       "about": "  ",
       "area": "Berlin"
@@ -59,7 +62,7 @@
     {
       "id": 8,
       "name": "Lilly Auler",
-      "communities":  ["lol", "valorant"],
+      "communities":  ["Rocket League", "GTA 5"],
       "picture": "https://randomuser.me/api/portraits/women/4.jpg",  
       "about": "hi im blablabla",
       "area": "Kalkar"
@@ -67,7 +70,7 @@
     {
       "id": 9,
       "name": "Luigi Mafioletti",
-      "communities":  ["lol", "valorant"],
+      "communities":  ["Call of Duty", "Dota2"],
       "picture": "https://randomuser.me/api/portraits/men/5.jpg",  
       "about": "hi im blablabla",
       "area": "Köln"
@@ -75,7 +78,7 @@
     {
       "id": 10,
       "name": "Ana Moon",
-      "communities":  ["lol", "valorant"],
+      "communities":  ["GTA 5", "Dota 2"],
       "picture": "https://randomuser.me/api/portraits/women/5.jpg",  
       "about": "hi im blablabla",
       "area": "Kalkar"
@@ -171,8 +174,8 @@
   "myProfile":
      {
     "name": "Maria Eduarda Auler",
-    "communities": ["League of Legends", "Valorant"],
-    "picture": "https://randomuser.me/api/portraits/men/4.jpg", 
+    "communities": ["League of Legends", "Valorant", "Dont Starve Together", "GTA 5"],
+    "picture": "https://randomuser.me/api/portraits/women/12.jpg", 
     "about": "hi",
     "area": "Essen"
   
@@ -181,8 +184,31 @@
 "posts" : [
   {
     "id": 1,
-    "text": "hello",
-    "img":"upload"
+    "title":"Steam-Spieleflut: Ihr könnt über 100 Games kostenlos zocken",
+    "text": "Das nächste Steam Next Fest ist angebrochen – Zeit, wie wild Demos zu installieren und kommende Spiele auszuprobieren. Es sind wieder Hunderte Titel dabei, die ihr kostenlos zocken könnt. Bis wann ihr dazu noch die Gelegenheit habt und welche Games wir wärmstens empfehlen können, zeigen wir euch jetzt.",
+    "img":"https://levelup.chip.de/wp-content/uploads/2021/02/store_home_share2.jpg",
+    "user":   {
+      "id": 9,
+      "name": "Luigi Mafioletti",
+      "communities":  ["Call of Duty", "Dota2"],
+      "picture": "https://randomuser.me/api/portraits/men/5.jpg",  
+      "about": "hi im blablabla",
+      "area": "Köln"
+    }
+  },
+  {
+    "id": 2,
+    "title":"Zelda und Metroid in einem: Epic Games schenkt euch humorvolles Rätselspiel",
+    "text": "Der Epic Games Store lockt PC-Spieler mit verschiedenen Vorteilen in den Shop. Neben Exklusivspielen und großen Sales können sich Besucher auch jede Woche über mindestens ein neues Gratis-Game freuen. Reinschauen lohnt sich, denn hin und wieder sind echte Blockbuster oder spannende Geheimtipps dabei. Und das Beste: Einmal gesichert, könnt ihr die Spiele für immer behalten!",
+    "img":"https://static.giga.de/wp-content/uploads/2022/06/supraland-rcm850x478u.jpg",
+    "user": {
+      "name": "Maria Eduarda Auler",
+      "communities": ["League of Legends", "Valorant", "Dont Starve Together", "GTA 5"],
+      "picture": "https://randomuser.me/api/portraits/women/12.jpg", 
+      "about": "hi",
+      "area": "Essen"
+    
+    }
   }
 ]
 

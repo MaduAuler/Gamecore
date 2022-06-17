@@ -6,6 +6,7 @@ import Communities from './components/Communities';
 import Login from './components/Login';
 import Community from './components/Community';
 import Profile from './components/Profile'
+import ProfilePage from './pages/ProfilePage'
 import {Provider} from 'react-redux'
 import store from './redux/store'
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="/login" element= {<Login/>}/>
         <Route path='/community/:game' element= {<Community/>}/>
         <Route path='/profile/:name' element={<Profile/>}/>
+        <Route path='/myprofile' element={<ProfilePage/>}/>
       </Routes>
       </BrowserRouter>
        </Provider>

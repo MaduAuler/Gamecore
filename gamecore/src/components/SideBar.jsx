@@ -4,7 +4,6 @@ import home from "../home.svg"
 import profile from "../profile.svg"
 import community from "../community.svg"
 import logout from "../logout.svg"
-import { CgCommunity, CgLogOut } from "react-icons/cg";
 import { Button, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { getMembersAction, getMyProfileAction } from "../redux/actions";
@@ -24,7 +23,7 @@ const SideBar = () => {
 
   return (
     <div className="container-sidebar">
-      <Container fluid>
+      <Container >
         <img src={logo} alt="logo" className="logo-img mt-3 mb-5  " />
 
         <div className="mb-3 ">
@@ -55,7 +54,7 @@ const SideBar = () => {
         </div>
 
         <div className=" mb-5">
-          <Link to={"/profile/" + myProfile.name}>
+          <Link to="/myprofile">
             <Button variant="outline-secondary" size="lg" className="buttons">
               <div className="float d-flex align-items-center justify-content-center ">
              <img src={profile} alt="profile" className=" mr-2" />
